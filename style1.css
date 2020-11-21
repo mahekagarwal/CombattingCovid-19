@@ -1,0 +1,116 @@
+body{
+background-image: url(https://cdn.thewire.in/wp-content/uploads/2020/04/02202453/fusion-medical-animation-rnr8D3FNUNY-unsplash-1600x900.jpg);
+display: flex;
+min-height: 100vh;
+background-position: center;
+background-size: 105%;
+overflow-x:hidden;
+} 
+.row
+{
+
+  display: flex;
+height: 80%;
+align-items: center;
+margin-left: 50%;
+width: 100%;
+}
+.row .col
+{
+margin-left: 10%;
+margin-top: 5%;
+}
+.row .col h1
+{
+color:white;
+font:wildwest;
+font-size: 60px;
+margin-left: 5%;
+}
+.row .col p
+{
+color: #fff;
+font-size:40px;
+text-align: center;
+line-height: 10px;
+margin-left: 5%;
+}
+.card{
+width: 200px;
+height: 230px;
+display: inline-block;
+border-radius: 10px;
+padding: 10 px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 20px 15px;
+background-position: center;
+background-size: cover;
+
+}
+.card1{
+background-image: url(https://www.aljazeera.com/wp-content/uploads/2020/06/374bfee455ce4d3fa9a7f973639293df_18.jpeg?resize=770%2C513);
+}
+.card2{
+background-image: url(https://im-media.voltron.voanews.com/Drupal/01live-166/styles/sourced_737px_wide/s3/2020-03/ap_india_workers_26Mar20.jpg?itok=wwkD18Je);
+}
+.card3{
+background-image: url(https://pragnews.com/wp-content/uploads/2020/08/Covid-19-760x443.jpg);
+}
+.card4{
+background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202008/wuhan_reuters.jpeg?w_ilzXeEt0brXLKg5DkEWNoeVLyt7Fh4&size=770:433);
+}
+.card:hover{
+transform:translateY(-20px);
+
+transistion: transform 0.5s;
+}
+.row1
+{
+background-color:black;
+height:300px;
+width:100%;
+}
+.card8{
+width: 180px;
+height: 180px;
+display: inline-block;
+border-radius: 10px;
+padding: 50 px 40px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 20px 40px;
+background-image: url(image.png);
+background-position: center;
+background-size: cover;
+margin-left:200px;
+margin-top:0px;
+
+}
+.row1 .col h1
+{
+color:white;
+font:wildwest;
+font-size: 25px;
+margin-left: 5%;
+}
+.row1 .col p
+{
+color: #fff;
+font-size:15px;
+text-align: center;
+line-height: 10px;
+margin-left: 5%;
+margin-top:110%;
+}
+.card5{
+background-image: url(images/rajveer1.jpeg);
+}
+
+.card6{
+background-image: url(images/smruti1.jpeg);
+}
+
+.card7{
+background-image: url(images/mahek1.jpeg);
+}
