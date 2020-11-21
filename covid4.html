@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>COVID-19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family:calibri;
+  margin: 0;
+font-size: 22px;
+color: white;
+
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-size: cover;
+  font-family: calibri;
+font-size : 80px:
+color: white;
+background-image:url("https://intermountainhealthcare.org/-/media/images/covid/coronavirus-covid-19.jpg?mw=1600");
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 80px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+background-size: cover;
+  background-image:url("https://img.freepik.com/free-photo/blue-dark-gradient-texture-wall-background_28629-888.jpg?size=626&ext=jpg");
+  padding: 20px;
+
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-image:url("https://img.freepik.com/free-photo/blue-dark-gradient-texture-wall-background_28629-888.jpg?size=626&ext=jpg");
+  padding: 20px;
+}
+
+
+button {
+width: 300px;
+height: 50px;
+margin-top: 20px;
+font-family: calibri;
+font-size: 30px;
+color: black;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-image:url("https://img.freepik.com/free-photo/blue-dark-gradient-texture-wall-background_28629-888.jpg?size=626&ext=jpg");
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>COVID-19 SYMPTOM CHECKER</h1>
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-top" style="padding-bottom: 10px;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="homepage.html">COMBATTING COVID-19<br>We are in this together.<br> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span><strong> HOME</strong></a></li>
+			<li><a href="live.html"><span class="glyphicon glyphicon-blackboard"></span><strong>COVID-19 LIVE STATS</strong></a></li>
+            <li><a href="covid4.html"><span class="glyphicon glyphicon-user"></span><strong> SYMPTOM CHECKER</strong></a></li>
+            <li><a href="sc.html"><span class="glyphicon glyphicon-alert"></span><strong> PRECAUTIONS</strong></a></li>
+			
+</ul>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="side">
+    <form id="form1">
+
+<p><h3>Q1.Have you experienced one or/and more of the following symptoms?</h3>
+<label for="var_string"><input type="radio" name="variable" value="1" id="var_string" />Fever/Cough/Cold/Throat pain</label><br>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />None</label></p>
+
+
+<p><h3>Q2.Have you experienced loss of sense of taste?</h3>
+<label for="sub_string"><input type="radio" name="sub" value="1" id="sub_string"/>Yes</label><br>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>No</label></p>
+
+<p><h3>Q3.Have you experienced difficulty in breathing?</h3>
+<label for="cat_string"><input type="radio" name="con" value="1" id="cat_string" />Yes</label><br>
+<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />No</label></p>
+
+<p><h3>Q4.Have you ventured out to any public gathering(crowded marketplace ,social events,hotels or restaurants)?</h3>
+<label for="if_string"><input type="radio" name="ifstate" value="1" id="if_string" />Yes</label><br>
+<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />No</label></p>
+
+<p><h3>Q5.Have you come into contact with health workers or their relatives?</h3>
+<label for="com_string"><input type="radio" name="com" value="1" id="com_string" />Yes</label><br>
+<label for="com_join"><input type="radio" name="com" value="0" id="com_join" />No</label></p>
+
+<p><h3>Q6.Have you travelled internationally/domestically?</h3>
+<label for="dom_string"><input type="radio" name="dom" value="1" id="dom_string" />Yes</label><br>
+<label for="dom_join"><input type="radio" name="dom" value="0" id="dom_join" />No</label> </p><br><br><br>
+
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+<p><h2>Infection Possibility: <span id="grade"></span></p>
+<p id="grade2"></h2></p>
+
+
+  </div>
+  <div class="main">
+    
+<img src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200423120222-01-face-masks-wellness-trnd-restricted.jpg"alt="mask"width="300" height="200"style="border-radius:15px;"><br><br>
+  <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcXdBUs-yPoHbt6CVOYhB75TLJCvkOQAx7nA&usqp=CAU"alt= "vac"width="300" height="200"style="border-radius:15px;">
+<br><br>
+<img src ="https://ichef.bbci.co.uk/news/976/cpsprodpb/EB06/production/_112566106_gettyimages-1214679972.jpg"alt= "dis"width="300" height="200"style="border-radius:15px;">
+<br><br>
+<img src ="https://www.theindiaforum.in/sites/default/files/field/image/2020/04/11/Debraj_Ray_Lockdown_The_HIndu-1586571317.jpeg"alt= "lock"width="300" height="200"style="border-radius:15px;">
+<br><br>
+<img src ="https://w.ndtvimg.com/sites/3/2020/06/19120252/coronavirus_guidelines_for_healthcare_wrokers_ministry_of_health_660x330.jpg"alt= "hw"width="300" height="200"style="border-radius:15px;">
+<br><br>
+<img src ="https://blog.aham.org/wp-content/uploads/2020/03/Sanitizing-1024x683.jpg"alt= "san"width="300" height="200"style="border-radius:15px;">
+<br><br>
+</div>
+</div>
+
+<div class="footer">
+  
+</div>
+<script>
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	   com = parseInt(document.querySelector('input[name = "com"]:checked').value);
+	   dom = parseInt(document.querySelector('input[name = "dom"]:checked').value);
+	   
+	   
+	   result = variable + sub + con + ifstate + com + dom;
+	   
+	//document.getElementById("grade").innerHTML = result;
+if (result == 0) {result2 = "LOW"};
+if (result >= 1) {result2 = "Kindly exercise caution. Follow WHO protocols on social isolation. Stay calm and seek your doctor's appointment."};
+
+document.getElementById("grade2").innerHTML = result2; 
+
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	   com = parseInt(document.querySelector('input[name = "com"]:checked').value);
+	   dom = parseInt(document.querySelector('input[name = "dom"]:checked').value);
+	   
+	   
+	   result = variable + sub + con + ifstate + com + dom;
+	   
+	//document.getElementById("grade").innerHTML = result;
+if (result == 0) {result2 = "LOW"};
+if (result >= 1) {result2 = "Kindly exercise caution.Follow WHO protocols on social isolation.Stay calm and seek your doctor's appointment."};
+
+document.getElementById("grade2").innerHTML = result2; 
+
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+
+</script>
+</body>
+</html>
